@@ -43,7 +43,7 @@ function onGalleryClick(event) {
     return;
   }
   const urlOfElemtForModal = event.target.dataset.source;
-  //   console.log(event.target);
+  // console.log(event.target);
   //-----------------------4, 5-------------------------------//
   addModal(urlOfElemtForModal);
   //---------------------------6----------------------------//
