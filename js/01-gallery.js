@@ -43,16 +43,18 @@ function onGalleryClick(event) {
     return;
   }
   const urlOfElemtForModal = event.target.dataset.source;
+  const altOfElementForModal = event.target.alt;
   // console.log(event.target);
+  // console.log(altOfElementForModal);
   //-----------------------4, 5-------------------------------//
-  addModal(urlOfElemtForModal);
+  addModal(urlOfElemtForModal, altOfElementForModal);
   //---------------------------6----------------------------//
   closeModalWithPressEsc();
 }
 
-function addModal(source) {
+function addModal(source, alt) {
   const instance = basicLightbox.create(`
-      <img src="${source}" width="800" height="600">
+      <img src="${source}" alt="${alt}" width="800" height="600">
 `);
   instance.show();
 }
