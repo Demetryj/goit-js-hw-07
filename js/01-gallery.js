@@ -69,6 +69,7 @@ function closeModalWithPressEsc() {
       return;
     }
     basicLightboxEl.remove();
+    document.removeEventListener('keydown', onModalClose);
   }
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////
